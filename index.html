@@ -45,8 +45,21 @@
 <body>
 <div class="container">
   <h1>Welcome to Randomly!</h1>
-  <p>Your gateway to the most unexpected and delightful surprises online. Explore the unknown and embrace the random.</p>
+  <p>Your gateway to the most unexpected and delightful surprises online.</p>
+
+  <!-- Placeholder where React app will be injected -->
+  <div id="react-widget-container"></div>
+
   <a href="#" class="cta-button">Get Started</a>
 </div>
 </body>
+
+<script>
+  (function() {
+    const script = document.createElement("script");
+    script.src = "https://embedreact-test.onrender.com/assets/widget.js"; // Use correct URL
+    script.type = "module";
+    document.body.appendChild(script);
+  })();
+</script>
 </html>
